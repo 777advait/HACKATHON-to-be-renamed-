@@ -5,7 +5,7 @@ html {
 :root {
     --background: #f6f6f6;
     --foreground: #084B83;
-    --tertiary: #f2c744;
+    --tertiary: #FF9D8F;
 }
 
 
@@ -54,7 +54,12 @@ a {
             padding: .5em 2em;
             border-radius: 8rem;
             color: var(--background);
-            font-weight: bold   ;
+            font-weight: bold;
+            
+
+            :hover {
+                background-color: #FFD5CF;
+            }
         }
 
         .active {

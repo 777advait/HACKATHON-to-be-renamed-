@@ -5,7 +5,7 @@ html {
 :root {
   --background: #f6f6f6;
   --foreground: #084B83;
-  --tertiary: #f2c744;
+  --tertiary: #FF9D8F;
 }
 
 body {
@@ -51,6 +51,9 @@ a {
   border-radius: 8rem;
   color: var(--background);
   font-weight: bold;
+}
+.container-fluid .nav-links .cta :hover {
+  background-color: #FFD5CF;
 }
 .container-fluid .nav-links .active {
   font-weight: bold;
