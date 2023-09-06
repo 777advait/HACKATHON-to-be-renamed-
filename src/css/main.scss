@@ -1,11 +1,16 @@
+@font-face {
+    font-family: "against";
+    src: url("/fonts/against\ regular.ttf");
+}
+
 html {
     font-size: 62.5%;
 }
 
 :root {
     --background: #f6f6f6;
-    --foreground: #084B83;
-    --tertiary: #FF9D8F;
+    --foreground: #175c75;
+    --tertiary: #a72608;
 }
 
 
@@ -35,9 +40,21 @@ a {
     display: flex;
     align-items: center;
 
+    .branding {
+        display: flex;
+        align-items: center;
+        gap: 1.5em;
+        cursor: pointer;
+
+        .nav-logo {
+            width: 22%;
+        }
+    }
 
     .navbar-brand {
         font-size: 3em;
+        color: var(--foreground);
+        font-family: "against";
     }
 
     .nav-links {
@@ -45,7 +62,7 @@ a {
         gap: 5em;
 
         li a{
-            font-size: 1.5em;
+            font-size: 1.8em;
             color: var(--foreground);
         }
 
@@ -55,11 +72,6 @@ a {
             border-radius: 8rem;
             color: var(--background);
             font-weight: bold;
-            
-
-            :hover {
-                background-color: #FFD5CF;
-            }
         }
 
         .active {
@@ -78,6 +90,7 @@ a {
 
     h1 {
         font-size: 5em;
+        font-family: "against";
 
         .bold {
             font-weight: bold;
@@ -94,15 +107,54 @@ a {
     }
 
     .get-started-cta {
-        font-size: 2em;
         display: flex;
         gap: 2em;
         align-items: center;
+        background-color: var(--tertiary);
+        padding: 1em 2em;
+        border-radius: 8em;
+    }
+
+    .get-started-btn {
+        font-size: 2em;
+        color: var(--background);
     }
     
 
     .check {
         width: 22px;
         height: 22px;
+    }
+}
+
+
+.about-section {
+    margin: 10em;
+    display: flex;
+    justify-content: space-between;
+    // gap: 20em;
+
+    .logo {
+        img{
+            width: 150%;
+        }
+    }
+
+    .about-txt {
+        width: 45%;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        gap: 4em;
+
+        .head {
+            font-size: 5em;
+            color: var(--foreground);
+            font-family: "against";
+        }
+
+        .subhead {
+            font-size: 1.7rem;
+        }
     }
 }

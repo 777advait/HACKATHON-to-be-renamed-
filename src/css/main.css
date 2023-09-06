@@ -1,11 +1,15 @@
+@font-face {
+  font-family: "against";
+  src: url("/fonts/against regular.ttf");
+}
 html {
   font-size: 62.5%;
 }
 
 :root {
   --background: #f6f6f6;
-  --foreground: #084B83;
-  --tertiary: #FF9D8F;
+  --foreground: #175c75;
+  --tertiary: #a72608;
 }
 
 body {
@@ -34,15 +38,26 @@ a {
   display: flex;
   align-items: center;
 }
+.container-fluid .branding {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  cursor: pointer;
+}
+.container-fluid .branding .nav-logo {
+  width: 22%;
+}
 .container-fluid .navbar-brand {
   font-size: 3em;
+  color: var(--foreground);
+  font-family: "against";
 }
 .container-fluid .nav-links {
   display: flex;
   gap: 5em;
 }
 .container-fluid .nav-links li a {
-  font-size: 1.5em;
+  font-size: 1.8em;
   color: var(--foreground);
 }
 .container-fluid .nav-links .cta {
@@ -51,9 +66,6 @@ a {
   border-radius: 8rem;
   color: var(--background);
   font-weight: bold;
-}
-.container-fluid .nav-links .cta :hover {
-  background-color: #FFD5CF;
 }
 .container-fluid .nav-links .active {
   font-weight: bold;
@@ -68,6 +80,7 @@ a {
 }
 .hero h1 {
   font-size: 5em;
+  font-family: "against";
 }
 .hero h1 .bold {
   font-weight: bold;
@@ -80,12 +93,42 @@ a {
   width: 45%;
 }
 .hero .get-started-cta {
-  font-size: 2em;
   display: flex;
   gap: 2em;
   align-items: center;
+  background-color: var(--tertiary);
+  padding: 1em 2em;
+  border-radius: 8em;
+}
+.hero .get-started-btn {
+  font-size: 2em;
+  color: var(--background);
 }
 .hero .check {
   width: 22px;
   height: 22px;
+}
+
+.about-section {
+  margin: 10em;
+  display: flex;
+  justify-content: space-between;
+}
+.about-section .logo img {
+  width: 150%;
+}
+.about-section .about-txt {
+  width: 45%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+.about-section .about-txt .head {
+  font-size: 5em;
+  color: var(--foreground);
+  font-family: "against";
+}
+.about-section .about-txt .subhead {
+  font-size: 1.7rem;
 }/*# sourceMappingURL=main.css.map */
