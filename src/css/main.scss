@@ -66,6 +66,10 @@ a {
             color: var(--foreground);
         }
 
+        :hover {
+            font-weight: bold;
+        }
+
         .cta {
             background-color: var(--tertiary);
             padding: .5em 2em;
@@ -106,6 +110,28 @@ a {
         width: 45%;
     }
 
+    .hero-cta {
+        display: flex;
+        align-items: center;
+        gap: 5em;
+    }
+
+    .playlist-cta {
+        display: flex;
+        align-items: center;
+        gap: 1.5em;
+
+        img {
+            width: 10%;
+        }
+
+        a {
+            font-size: 1.4em;
+            color: var(--foreground);
+            text-decoration: underline;
+        }
+    }
+
     .get-started-cta {
         display: flex;
         gap: 2em;
@@ -136,7 +162,7 @@ a {
 
     .logo {
         img{
-            width: 150%;
+            width: 100%;
         }
     }
 
@@ -192,5 +218,65 @@ a {
 
     .chart {
         width: 30%;
+    }
+}
+
+
+.challenges {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+    margin: 10em;
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+
+        h1 {
+            font-size: 5em;
+            font-family: "against";
+            color: var(--foreground);
+        }
+
+        p {
+            font-size: 2em;
+        }
+    }
+
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+        margin-top: 2em;
+        background-color: white;
+        width: 60%;
+        position: relative;
+        left: 20%;
+        padding: 3em 0;
+        border-radius: 3em;
+
+        h3 {
+            font-size: 3rem;
+            font-family: "against";
+            color: var(--foreground);
+        }
+
+        p {
+            width: 75%;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        a {
+            font-size: 2em;
+            background-color: var(--tertiary);
+            padding: .5em 1em;
+            border-radius: 8em;
+            color: var(--background);
+        }
     }
 }

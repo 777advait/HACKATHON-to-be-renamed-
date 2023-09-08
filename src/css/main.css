@@ -60,6 +60,9 @@ a {
   font-size: 1.8em;
   color: var(--foreground);
 }
+.container-fluid .nav-links :hover {
+  font-weight: bold;
+}
 .container-fluid .nav-links .cta {
   background-color: var(--tertiary);
   padding: 0.5em 2em;
@@ -92,6 +95,24 @@ a {
 .hero .left {
   width: 45%;
 }
+.hero .hero-cta {
+  display: flex;
+  align-items: center;
+  gap: 5em;
+}
+.hero .playlist-cta {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+.hero .playlist-cta img {
+  width: 10%;
+}
+.hero .playlist-cta a {
+  font-size: 1.4em;
+  color: var(--foreground);
+  text-decoration: underline;
+}
 .hero .get-started-cta {
   display: flex;
   gap: 2em;
@@ -115,7 +136,7 @@ a {
   justify-content: space-between;
 }
 .about-section .logo img {
-  width: 150%;
+  width: 100%;
 }
 .about-section .about-txt {
   width: 45%;
@@ -160,4 +181,56 @@ a {
 }
 .why-section .chart {
   width: 30%;
+}
+
+.challenges {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5em;
+  margin: 10em;
+}
+.challenges .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+.challenges .heading h1 {
+  font-size: 5em;
+  font-family: "against";
+  color: var(--foreground);
+}
+.challenges .heading p {
+  font-size: 2em;
+}
+.challenges .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+  margin-top: 2em;
+  background-color: white;
+  width: 60%;
+  position: relative;
+  left: 20%;
+  padding: 3em 0;
+  border-radius: 3em;
+}
+.challenges .swiper-slide h3 {
+  font-size: 3rem;
+  font-family: "against";
+  color: var(--foreground);
+}
+.challenges .swiper-slide p {
+  width: 75%;
+  text-align: center;
+  font-size: 1.5em;
+}
+.challenges .swiper-slide a {
+  font-size: 2em;
+  background-color: var(--tertiary);
+  padding: 0.5em 1em;
+  border-radius: 8em;
+  color: var(--background);
 }/*# sourceMappingURL=main.css.map */
